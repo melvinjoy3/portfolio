@@ -19,7 +19,7 @@ function App() {
         }}
       >
         <Toggle />
-        <Intro />
+        <Intro  darkMode={darkMode}/>
         <About />
         <Contact />
       </div>
