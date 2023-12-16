@@ -2,11 +2,16 @@ import React from "react";
 import "./intro.css";
 import Me from "../../img/melbin.png";
 import background from "../../img/bg.jpg";
-const Intro = () => {
-  const containerStyle = {
-    backgroundImage: `url(${background})`, // Set the background image
-  };
 
+// eslint-disable-next-line no-unused-vars
+type InterfaceProps = {
+  darkMode?: any;
+}
+
+const Intro = ({ darkMode }: InterfaceProps) => {
+  const containerStyle = {
+    backgroundImage: darkMode !== true ? `url(${background})` : "", // Set the background image
+  };
   return (
     <div className="i" style={containerStyle}>
       <div className="i-left">
