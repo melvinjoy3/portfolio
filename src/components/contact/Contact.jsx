@@ -13,15 +13,14 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e) => {
+    console.log('formRef',formRef.current);
     e.preventDefault();
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        // "template_q43td0w",
         formRef.current,
         process.env.REACT_APP_PUBLIC_KEY
-        // "user_xatqsRwwhA22O9zw81dm9"
       )
       .then(
         (result) => {
@@ -56,10 +55,6 @@ const Contact = () => {
           </div>
         </div>
         <div className="c-right">
-          {/* <p className="c-desc"> */}
-            {/* <b>What's your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me. */}
-          {/* </p> */}
           <div>
           <b>What's your story?</b> Get in touch. Always available for
             freelancing if the right project comes along. me.
