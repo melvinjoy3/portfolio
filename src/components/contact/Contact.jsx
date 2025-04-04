@@ -51,7 +51,7 @@ const Contact = () => {
               <img className="c-icon" src={Address} alt="" />
               Kochi, Kerala, India
             </div>
-            <dv><a href="/melbin's_resume.pdf" download="Melbin's_Resume.pdf">Resume download</a></dv>
+            <dv><a href="/melbin's_resume.pdf" download="Melbin's_Resume.pdf">Download Resume</a></dv>
           </div>
         </div>
         <div className="c-right">

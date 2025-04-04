@@ -80,6 +80,23 @@ button {
   cursor: pointer;
 }
 
+.resume-download {
+  display: inline-block;
+  background-color: #59b256;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.resume-download:hover {
+  background-color: #4a9248;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;
