@@ -16,8 +16,6 @@ const Intro = ({ darkMode }) => {
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Front-end developer</div>
-              {/* <div className="i-title-item">Gamer</div>
-              <div className="i-title-item">Gamer</div> */}
             </div>
           </div>
           <p className="i-desc">
