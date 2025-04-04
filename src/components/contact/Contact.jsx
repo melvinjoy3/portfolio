@@ -1,5 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import "./contact.css";
+import App from '../../'
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
@@ -50,11 +51,12 @@ const Contact = () => {
               <img className="c-icon" src={Address} alt="" />
               Kochi, Kerala, India
             </div>
+            <dv><a href="/melbin's_resume.pdf" download="Melbin's_Resume.pdf">Resume download</a></dv>
           </div>
         </div>
         <div className="c-right">
           <div>
-          <b>What's your story?</b> Get in touch. Always available for
+            <b>What's your story?</b> Get in touch. Always available for
             freelancing if the right project comes along. me.
           </div>
           <form ref={formRef} onSubmit={handleSubmit}>

@@ -36,10 +36,6 @@ const About = () => {
       </div>
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
-        <p className="a-sub">
-          It is a long established fact that a reader will be distracted by the
-          readable content.
-        </p>
         <p className="a-desc">
           A highly skilled software professional with a focus on delivering robust React applications. Proven ability to create dynamic and responsive web interfaces, ensuring seamless user experiences. Committed to team collaboration and adaptability, showcasing expertise in JavaScript, HTML, and CSS.
         </p>
