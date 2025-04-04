@@ -3,12 +3,7 @@ import "./intro.css";
 import Me from "../../img/melbin.png";
 import background from "../../img/bg.jpg";
 
-// eslint-disable-next-line no-unused-vars
-type InterfaceProps = {
-  darkMode?: any;
-}
-
-const Intro = ({ darkMode }: InterfaceProps) => {
+const Intro = ({ darkMode }) => {
   const containerStyle = {
     backgroundImage: darkMode !== true ? `url(${background})` : "", // Set the background image
   };
@@ -20,13 +15,12 @@ const Intro = ({ darkMode }: InterfaceProps) => {
           <h1 className="i-name">Melbin Joy</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">Gamer</div>
+              <div className="i-title-item">Front-end developer</div>
             </div>
           </div>
           <p className="i-desc">
             Hey, it's me, Melbin. I've been working as a software engineer for
-            the past 2 years, specializing in the MERN stack.
+            the past 3+ years, specializing in the Front-end.
           </p>
         </div>
         <svg
