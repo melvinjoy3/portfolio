@@ -2,6 +2,30 @@ import "./about.css";
 import Me from "../../img/melbin.png";
 
 const About = () => {
+
+  const skills = {
+    languages: ["JavaScript", "TypeScript", "JSX", "HTML", "CSS"],
+    frameworks: ["React.js", "Next.js", "Node.js", "Express.js"],
+    libraries: [
+      "Tailwind", "Zustand", "React-router", "Stripe",
+      "Bootstrap", "Material UI", "SCSS", "Unit test"
+    ],
+    cloud: ["AWS-Lambda", "AWS-Cognito"],
+    devTools: ["Visual Studio code", "Git", "Gitlab", "React-dev tools"],
+    backendAndApi: ["REST API", "Authentication (OAuth)", "API Integration"],
+    databases: ["MongoDB", "AWS-DynamoDB"]
+  };
+
+  const skillLabels = {
+    languages: "Languages",
+    frameworks: "Frameworks",
+    libraries: "Libraries",
+    backendAndApi: "Backend and API",
+    cloud: "Cloud",
+    devTools: "Dev Tools",
+    databases: "Databases"
+  };
+
   return (
     <div className="a">
       <div className="a-left">
@@ -12,32 +36,20 @@ const About = () => {
       </div>
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
-        <p className="a-sub">
-          It is a long established fact that a reader will be distracted by the
-          readable content.
-        </p>
         <p className="a-desc">
-          Experienced React JS developer with a passion for transforming
-          innovative concepts into user-friendly web applications. Proven
-          expertise in crafting efficient and scalable code, with a keen eye for
-          detail. Eager to contribute technical skills and a collaborative
-          mindset to a growth-oriented team, driving impactful results in a
-          dynamic development environment.
+          A highly skilled software professional with a focus on delivering robust React applications. Proven ability to create dynamic and responsive web interfaces, ensuring seamless user experiences. Committed to team collaboration and adaptability, showcasing expertise in JavaScript, HTML, and CSS.
         </p>
-       
+
         <div style={{ marginTop: "15px" }}>
           <h1 className="a-title">Skills</h1>
           <p className="a-desc">
-          <button>React JS</button>
-          <button style={{ marginLeft: "5px" }}>TypeScript</button>
-          <button style={{ marginLeft: "5px" }}>Express Js</button>
-          <button style={{ marginLeft: "5px" }}>AWS (Lambda, Cognito)</button>
-          <button style={{ marginLeft: "5px" }}>MongoDB</button>
-          <button style={{ marginLeft: "5px" }}>DynamoDB</button>
-          <button style={{ marginLeft: "5px" }}>Zustand</button>
-          <button style={{ marginLeft: "5px" }}>Git</button>
-          <button style={{ marginLeft: "5px" }}>HTML</button>
-          <button style={{ marginLeft: "5px" }}>CSS</button>
+            <ul>
+              {Object.keys(skillLabels).map((key) => (
+                <li key={key}>
+                  <strong>{skillLabels[key]}:</strong> {skills[key].join(", ")}
+                </li>
+              ))}
+            </ul>
           </p>
         </div>
       </div>
