@@ -13,7 +13,6 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
 
   const handleSubmit = (e) => {
-    console.log('formRef',formRef.current);
     e.preventDefault();
     emailjs
       .sendForm(
@@ -24,7 +23,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log("result",result.text);
           setDone(true);
         },
         (error) => {
@@ -42,7 +40,7 @@ const Contact = () => {
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
-              +91 9746529803
+              +91 7907850478
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
@@ -50,7 +48,7 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
-              Mundakayam, Kerala, India
+              Kochi, Kerala, India
             </div>
           </div>
         </div>
