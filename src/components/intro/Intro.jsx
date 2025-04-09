@@ -1,6 +1,6 @@
 import React from "react";
 import "./intro.css";
-import Me from "../../img/melbin.png";
+import Me from "../../img/tojee.png";
 import background from "../../img/bg.jpg";
 
 const Intro = ({ darkMode }) => {
@@ -12,15 +12,15 @@ const Intro = ({ darkMode }) => {
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hey, My name is</h2>
-          <h1 className="i-name">Melbin Joy</h1>
+          <h1 className="i-name">Tojee Mani</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Front-end developer</div>
             </div>
           </div>
           <p className="i-desc">
-            Hey, it's me, Melbin. I've been working as a software engineer for
-            the past 3+ years, specializing in the Front-end.
+          Hey, it's me, Tojee. I'm a final year
+           MCA student with a strong focus on Full Stack Development.
           </p>
         </div>
         <svg

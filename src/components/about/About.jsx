@@ -1,11 +1,11 @@
 import "./about.css";
-import Me from "../../img/melbin.png";
+import Me from "../../img/tojee.png";
 
 const About = () => {
 
   const skills = {
-    languages: ["JavaScript", "TypeScript", "JSX", "HTML", "CSS"],
-    frameworks: ["React.js", "Next.js", "Node.js", "Express.js"],
+    languages: ["JavaScript", "PHP", "JSX", "HTML", "CSS"],
+    frameworks: ["React.js", "R", "Node.js", "Python", "Django"],
     libraries: [
       "Tailwind", "Zustand", "React-router", "Stripe",
       "Bootstrap", "Material UI", "SCSS", "Unit test"
@@ -13,7 +13,7 @@ const About = () => {
     cloud: ["AWS-Lambda", "AWS-Cognito"],
     devTools: ["Visual Studio code", "Git", "Gitlab", "React-dev tools"],
     backendAndApi: ["REST API", "Authentication (OAuth)", "API Integration"],
-    databases: ["MongoDB", "AWS-DynamoDB"]
+    databases: ["MongoDB", "MySQL"]
   };
 
   const skillLabels = {

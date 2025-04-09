@@ -45,13 +45,17 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
-              melbinjy@outlook.com
+              tojeemani8@gmail.com
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
               Kochi, Kerala, India
             </div>
-            <dv><a href="/melbin's_resume.pdf" download="Melbin's_Resume.pdf">Download Resume</a></dv>
+            <div className="c-info-item">
+              <a href="/melbin's_resume.pdf" download="tojee_resume.pdf" className="resume-download">
+                Download Resume
+              </a>
+            </div>
           </div>
         </div>
         <div className="c-right">
